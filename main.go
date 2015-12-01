@@ -89,6 +89,10 @@ func handleAPIData(conn net.Conn) {
 	t := time.Now()
 	log.Printf("%v\n", t.UTC())
 	fmt.Printf("Read %v bytes\n", n)
+
+	// echo echo
+	conn.Write(b)
+
 	conn.Close()
 }
 
